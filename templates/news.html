@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>新闻</title>
+        <link rel="shortcut icon" href="/static/fav.ico" type="image/x-icon" />
+    </head>
+    <body>
+        {% for new in all_news %}
+        <h1>标题：{{ new.title }}</h1>
+        <h2>作者：{{ new.author }}</h2>
+        <img src="{{ new.image }}">
+        <h3>内容：{{ new.content }}</h3>
+        {% endfor %}
+    </body>
+</html>

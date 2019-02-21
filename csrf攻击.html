@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <form action="http://localhost:3000/signature?token=asdasd" method="post" autocomplete="off">
+            <input type="text" name="signature" placeholder='个人签名'>
+            <button type="submit">提交</button>
+        </form>
+        <form method="post" action="http://localhost:3000/avatar_add?token=ddsw" enctype="multipart/form-data">
+            <input type="file" name="avatar">
+            <button type="submit">上传头像</button>
+        </form>
+    </body>
+</html>
