@@ -90,10 +90,11 @@ def configured_app():
 
 if __name__ == "__main__":
     app = configured_app()
+    
     # config = dict(
-    #     debug=True,
     #     host='0.0.0.0',
     #     port=3000,
     # )
     # app.run(**config)
-    socketio.run(app, host='localhost', port=3000)
+    
+    socketio.run(app, host='127.0.0.1', port=3000)

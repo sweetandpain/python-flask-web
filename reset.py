@@ -102,9 +102,10 @@ class orm_test(object):
             types='1',
         )
         user1 = User(
-            username='qweasd',
+            username='sweetandpain',
             password=salt_password('123'),
-            email='wsewed@163.com',
+            email='jr10101010@163.com',
+            usertype='0',
         )
         todo1 = Todo(
             title='asdasd',
@@ -129,8 +130,8 @@ def main():
     reset_table(Todo)
     reset_table(Topic)
     reset_table(Reply)
-    # a = orm_test()
-    # a.add_one()
+    a = orm_test()
+    a.add_one()
 
 if __name__ == "__main__":
     main()
